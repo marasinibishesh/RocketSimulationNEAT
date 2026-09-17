@@ -139,12 +139,6 @@ NEAT is stochastic. A strong landing controller may take many generations depend
 
 The fitness function combines pad-centering progress, descent progress, horizontal/vertical speed penalties, attitude and angular-rate penalties, fuel use and a large terminal bonus for a valid soft landing. See `docs/NEAT.md` for details.
 
-## Accuracy and extension points
-
-This repository intentionally separates public facts from modeled assumptions. If you have higher-fidelity mass properties, engine throttle limits, aerodynamic tables, grid-fin models, wind profiles or telemetry, edit `configs/default.yaml` and/or replace the corresponding model in `physics.py` without changing the NEAT code.
-
-Natural next steps include multi-engine landing burns, boostback/reentry phases, Earth curvature in position dynamics, tabulated atmosphere, landing-leg contact dynamics, sensor noise/delay, recurrent NEAT, distributed evaluation, domain randomization, replay files, and telemetry plots.
-
 ## License and trademarks
 
 Code in this repository is MIT licensed. Falcon 9, SpaceX and related marks belong to their respective owners. This project is independent, unofficial and intended for education/research.
