@@ -11,8 +11,6 @@ A self-contained Python project that evolves a neural controller with **NEAT imp
 - Landing task: randomized initial position, velocity, attitude and wind; soft-touchdown criteria; dense progress shaping plus a large terminal landing reward.
 - Procedural 3-D model: Falcon 9 inspired stage, nine-engine cluster, interstage, grid fins, landing legs and live exhaust plume. A separate showroom mode displays a procedural full-stack ~70 m vehicle.
 - Procedural world: landing pad, terrain, distant low-poly hills, atmospheric fog, lighting, shadows, cinematic cameras and a telemetry HUD.
-- GitHub ready: `pyproject.toml`, CLI entry points, tests, GitHub Actions workflow, MIT license, architecture/physics/NEAT docs and editable YAML configuration.
-
 ## Quick start
 
 ```bash
