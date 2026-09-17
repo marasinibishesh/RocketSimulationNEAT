@@ -1,0 +1,65 @@
+rocket:
+  length_m: 47.7
+  diameter_m: 3.7
+  dry_mass_kg: 25600.0
+  landing_propellant_kg: 9000.0
+  engine_max_thrust_n: 845000.0
+  engine_isp_s: 282.0
+  max_gimbal_deg: 6.0
+  drag_coefficient: 0.82
+  reference_area_m2: 10.75
+  aero_torque_coefficient: 0.055
+  grid_fin_torque_coefficient: 0.12
+  angular_damping: 0.06
+
+environment:
+  dt_s: 0.05
+  max_time_s: 55.0
+  earth_gravity_mps2: 9.80665
+  earth_radius_m: 6371000.0
+  sea_level_density_kgpm3: 1.225
+  atmosphere_scale_height_m: 8500.0
+  pad_radius_m: 14.0
+  max_range_m: 2500.0
+  touchdown_vertical_speed_mps: 3.0
+  touchdown_horizontal_speed_mps: 2.5
+  touchdown_tilt_deg: 7.0
+  wind_speed_mps: 7.0
+  wind_gust_mps: 2.5
+  initial_altitude_m: 850.0
+  initial_lateral_spread_m: 130.0
+  initial_vertical_speed_mps: -62.0
+  initial_horizontal_speed_mps: 14.0
+  initial_tilt_deg: 5.0
+
+neat:
+  population_size: 96
+  generations: 80
+  episodes_per_genome: 3
+  input_count: 13
+  output_count: 3
+  survival_fraction: 0.25
+  elitism: 2
+  compatibility_threshold: 3.0
+  compatibility_excess: 1.0
+  compatibility_disjoint: 1.0
+  compatibility_weight: 0.4
+  stagnation_generations: 14
+  weight_mutation_rate: 0.80
+  weight_perturb_rate: 0.90
+  weight_perturb_sigma: 0.35
+  add_connection_rate: 0.12
+  add_node_rate: 0.045
+  toggle_connection_rate: 0.015
+  crossover_rate: 0.75
+  interspecies_mating_rate: 0.01
+  seed: 7
+
+render:
+  window_width: 1440
+  window_height: 900
+  multisamples: 4
+  shadow_map_size: 2048
+  camera_distance_m: 125.0
+  camera_height_m: 45.0
+  hud: true
